@@ -4,7 +4,7 @@ const NewsItem = (props) => {
 
   let { title, description, imageurl, content, newsUrl, source } = props;
   return <div className="my-3">
-    <div className="card" style={{flexDirection: 'row'}} >
+    <div className="card" >
       {/* <span className="badge text-bg-success" styles={{position:"absolute", top: "0", color: "#000"}}>{source}</span> */}
       <div className='col-md-4'>
 
