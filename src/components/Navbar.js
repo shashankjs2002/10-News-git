@@ -22,7 +22,7 @@ const Navbar = () => {
         // console.log(search)
         setQuery(search.search)
         // context.router.push()
-        navigate(`/search/${search.search}`)
+        navigate(`/10-News/search/${search.search}`)
         setSearch({search: ""})
         
     }
@@ -35,7 +35,7 @@ const Navbar = () => {
     return( <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
-                <Link className="navbar-brand" to="/">10-News</Link>
+                <Link className="navbar-brand" to="/10-News">10-News</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -44,14 +44,14 @@ const Navbar = () => {
                     <li className="nav-link">
                     <Link className={`nav-link ${(path==='/') ? 'active': ''}`} to="/">Home</Link>
                     </li>
-                    <li className={`nav-link ${(path==='/world') ? 'active': ''}`}><Link className="nav-link" to="/world">World</Link></li>
-                    <li className={`nav-link ${(path==='/nation') ? 'active': ''}`}><Link className="nav-link" to="/nation">Nation</Link></li>
-                    <li className={`nav-link ${(path==='/business') ? 'active': ''}`}><Link className="nav-link" to="/business">Business</Link></li>
-                    <li className={`nav-link ${(path==='/entertainment') ? 'active': ''}`}><Link className="nav-link" to="/entertainment">Entertainment</Link></li>
-                    <li className={`nav-link ${(path==='/health') ? 'active': ''}`}><Link className="nav-link" to="/health">Health</Link></li>
-                    <li className={`nav-link ${(path==='/science') ? 'active': ''}`}><Link className="nav-link" to="/science">Science</Link></li>
-                    <li className={`nav-link ${(path==='/sports') ? 'active': ''}`}><Link className="nav-link" to="/sports">Sports</Link></li>
-                    <li className={`nav-link ${(path==='/technology') ? 'active': ''}`}><Link className="nav-link" to="/technology">Technology</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/world') ? 'active': ''}`}><Link className="nav-link" to="/10-News/world">World</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/nation') ? 'active': ''}`}><Link className="nav-link" to="/10-News/nation">Nation</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/business') ? 'active': ''}`}><Link className="nav-link" to="/10-News/business">Business</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/entertainment') ? 'active': ''}`}><Link className="nav-link" to="/10-News/entertainment">Entertainment</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/health') ? 'active': ''}`}><Link className="nav-link" to="/10-News/health">Health</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/science') ? 'active': ''}`}><Link className="nav-link" to="/10-News/science">Science</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/sports') ? 'active': ''}`}><Link className="nav-link" to="/10-News/sports">Sports</Link></li>
+                    <li className={`nav-link ${(path==='/10-News/technology') ? 'active': ''}`}><Link className="nav-link" to="/10-News/technology">Technology</Link></li>
                     
                     {/* {(query!==null) ? :} */}
                     {/* <li className="nav-item"><Link className="nav-link" to={`/search=${query}`}>Technology</Link></li> */}
